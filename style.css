@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkolivegreen;
+    color: darkkhaki;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.banner {
+    padding: 15px;
+    background-color: khaki;
+    height: 300px;
+    background-image: url(./croc.webp);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+quote.{
+    text-align: center;
+    color: dimgrey;
+    font-size: 32px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px;color: yellow
+}
+
+.nav {
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid;color: darkgoldenrod;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    justify-content: flex-end;
+}
+.nav a {
+    border: 2px solid rgb(189, 106, 67);
+    padding:5px;
+    color: aliceblue;
+    text-decoration: wavy;
+    margin: 5px;
+
+    transition: all 250ms;
+
+}
+.nav a:hover {
+    background-color: white;
+    flex-grow: 1;
+}
+
+.fruitcard {
+    width: 200px;
+    height: 250px;
+    background-color: darkseagreen;
+
+    transition: all 0.5s;
+
+}
+
+.fruitcard:hover {
+    transform: rotate(5turn)scale(2);
+    box-shadow: -10px -10px -10px coral, -20px -20px --1px chocolate;
+    background-color: orange;
+}
+
+.fruitcard img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+#fruit {
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.veg-card {
+    padding: 15px;
+    background-color: tomato;
+    width: 275px;
+    height: 100px;
+
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.veg-card:hover {
+    transform: skew(20deg)scale(2);
+}
+
+.veg-card img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border: 2px solid chocolate;
+    border-radius: 50%;
+
+}
+
+#vegetable {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+
+}
+
+.footer {
+    padding: 15px;
+    background-color: coral;
+    text-align: center;
+}
+
+.wrapper {
+    padding: 15px;
+    background-color: lightsalmon;
+    margin: 15px;
+
+}
+
+.section-title {
+    text-align: center;
+    border-bottom: 5px yellow;
+    width: fit-content;
+    margin: 15px auto;
+}
+
+@keyframes quoteanim {
+0% {
+    color: brown;
+    letter-spacing: 1px;
+    font-size: 32px;
+}
+
+50% {
+color: chocolate;
+font-size: 64px;
+
+}
+
+100% {
+    color: goldenrod;
+    letter-spacing: 5px;
+    font-size: 32px;
+}
+}
+
+.quote {
+    animation: quoteanim 1s infinite;
+}
+  
+
